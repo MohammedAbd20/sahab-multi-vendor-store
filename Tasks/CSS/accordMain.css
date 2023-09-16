@@ -55,6 +55,10 @@
     background-color: #f9f7f6;
     padding: 20px 0;
 }
+.categories .container > p {
+    text-align: left;
+    margin: 10px;
+}
 .categories .items{
     display: flex;
     overflow: hidden;
@@ -73,16 +77,16 @@
     border-radius: 50%;
 }
 
-.categories-block .items::-webkit-scrollbar,.categories-block .items::-webkit-scrollbar {
+.items::-webkit-scrollbar,.categories-block .items::-webkit-scrollbar {
     width: 8px;
     background-color: white;
     height: 10px;
 }
-.categories-block .items::-webkit-scrollbar-thumb,.categories-block .items::-webkit-scrollbar-thumb {
+.items::-webkit-scrollbar-thumb,.categories-block .items::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #4182c3), color-stop(0.72, #4182c3), color-stop(0.86, #4182c3));
 }
-.categories .categories-block .items::-webkit-scrollbar-track, .categories .categories-block .items::-webkit-scrollbar-track {
+.items::-webkit-scrollbar-track, .categories .categories-block .items::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: white;
     border-radius: 8px;
