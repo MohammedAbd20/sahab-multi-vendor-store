@@ -1,0 +1,21 @@
+.main-slider{
+    background-image: url('../../image/slider-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 370px;
+}
+.main-slider div.position-absolute{
+    top: 15px;
+    left: 0;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .main-slider div.position-absolute {
+        margin: 0 2%;
+        width: 96%;
+    }
+}

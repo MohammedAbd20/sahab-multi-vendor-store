@@ -1,0 +1,17 @@
+@font-face {
+	src: url(../../Fonts/coArabic-Bold.ttf);
+	font-family: Co;
+}
+body{
+    font-family: 'Cairo', sans-serif !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

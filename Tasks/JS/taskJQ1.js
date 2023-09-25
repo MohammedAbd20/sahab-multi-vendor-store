@@ -1,9 +1,9 @@
 $(function(){
-    // $("div").not(".ignor,:has(*)");
+    $("div").not(".ignor,:has(*)");
 
-    // $("*:contains('REPLACE_ME')")
+    $("*:contains('REPLACE_ME')")
 
-    // $("div").children('.special');
+    $("div").children('.special');
 
     // $(':header') 
     // //or 

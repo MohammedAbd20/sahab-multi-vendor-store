@@ -1,0 +1,10 @@
+div.form-group i.fa-search{
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.imgBackGround{
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: 50% 50%; 
+}

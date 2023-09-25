@@ -1,0 +1,31 @@
+
+div a.bg-success i{
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-item img{
+    height: 500px !important;
+}
+
+button.btn-outline-secondary{
+    width: 48%;
+}
+p{
+    color: rgb(105, 103, 102) !important;
+}
+.item-details .description {
+    box-shadow: rgb(216 176 142) 0px -4px;
+}
+.item-details .attributes {
+    box-shadow: rgb(255 208 7) 0px -4px;
+}
+.item-details .additional-description {
+    box-shadow: rgb(192 156 221) 0px -4px;
+}
+.description p{
+    font-size: 13px;
+    font-weight: 500 !important;
+}
+
