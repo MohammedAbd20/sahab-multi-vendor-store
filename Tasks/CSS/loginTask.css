@@ -1,0 +1,101 @@
+@font-face {
+	src: url(../../Fonts/coArabic-Bold.ttf);
+	font-family: Co;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+.login{
+    width: 100%;
+    padding: 2.5rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.login .content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+.login .info-login{
+    width: 40%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 0 9px 9px 0;
+    box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 24px 38px 3px rgb(0 0 0 / 14%);
+}
+.login .info-login .logo-login{
+    padding-top: 16px;
+}
+.login .info-login .logo-login img{
+    width: 150px;
+}
+.login .info-login .title-login{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #696766;
+}
+.login .info-login .form-login .phoneAndMail{
+    margin-bottom: 16px;
+}
+.info-login .form-login label {
+    color: #696766;
+}
+.info-login .form-login input{
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.info-login .form-login input::placeholder{
+    font-family: Co;
+    color: #909090 !important;
+}
+.info-login .form-login .forgot-pass{
+    margin-top: 5px;
+    padding-bottom: 30px;
+}
+.info-login a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #495057;
+}
+.info-login .btn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 130, 195);
+    height: 48px;
+    padding: 0px 16px;
+    font-size: 17px;
+    border-radius: 6px;
+    font-family: Co;
+}
+.info-login .dontHaveAccount{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.login .image{
+    width: 60%;
+    position: relative;
+}
+.login .image img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px 0px 0px 5px;
+}

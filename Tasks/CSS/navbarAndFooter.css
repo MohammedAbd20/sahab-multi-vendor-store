@@ -1,0 +1,174 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: #696766;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+button, input::placeholder{
+    font-family: 'Cairo', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #868e96;
+    font-weight: 500;
+}
+a p{
+    color: #3f3f3f;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.container{
+    padding: 0 200px;
+}
+.header-line{
+    height: 5px;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+
+/* start navbar  */
+nav{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+nav .menu{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul{
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li{
+    text-align: center;
+    padding-left: 12px;
+    line-height: 1.4;
+}
+nav .btn{
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 185, 117);
+    padding: 3px 16px;
+    margin-left: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+nav .btn i{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border: 1px solid;
+    text-align: center;
+    line-height: 1.3;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/* /\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/ */
+
+/* start footer  */
+.footer .container .contnet-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .container .whatsapp,
+.footer .container .contact-us{
+    width: 32%;
+}
+.footer .container .protofile,
+.footer .container .information{
+    width: 16%;
+}
+.footer  .contnet-footer > div > p{
+    margin-bottom: 18px;
+}
+.footer  .contnet-footer > div > h3{
+    margin-bottom: 8px;
+}
+.footer .body-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.footer .body-contact > div{
+    width: 50%;
+    text-align: right;
+    margin:0 10px;
+}
+.footer .body-contact > div h4{
+    margin-top: 7px;
+    font-size: 14px;
+}
+.footer .body-contact > div p{
+    font-size: 15px;
+}
+.footer .number-whats{
+    margin-bottom: 20px;
+}
+.footer .number-whats form input{
+    padding: 6px;
+}
+.footer .number-whats form input::placeholder{
+    font-size: 15px;
+}
+.footer .whatsapp .number-whats form button{
+    background: #7e57c6;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    padding: 4px 20px;
+    font-size: 13px;
+    margin-right: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+.socil-media i{
+    font-size: 18px;
+    color: inherit;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 7px;
+}
+.socil-media .fa-instagram{
+    color: #fff;
+    background: #815dc7;
+}
+.socil-media .fa-facebook{
+    background: #3c5a99;
+    color: #fff;
+}
+.line-bottom{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* start advertising  */
+.advertising{
+    padding-top: 20px;
+}
+.advertising img{
+    border-radius: 5px;
+}
