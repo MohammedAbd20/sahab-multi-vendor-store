@@ -19,10 +19,15 @@ class profileController extends Controller
         $newName = $request->name;
         $email = $request->email;
         if($email == "" || !filter_var($email, FILTER_VALIDATE_EMAIL)){
-            return response()->json(["دخل الإيميل صح يحبيبي وتقعدش تتهبل"],403);
+            return response()->json(["يرجى إدخال بريد إلكتروني صحيح"],403);
         }
-        User::where('id', Auth::id())->update(['name' => $newName ]);
-        User::where('id', Auth::id())->update(['email' => $email ]);
+        if (trim((string) $newName) === '') {
+            return response()->json(["يرجى إدخال الاسم"], 403);
+        }
+        if (User::where('email', $email)->where('id', '!=', Auth::id())->exists()) {
+            return response()->json(["عذرًا، هذا البريد الإلكتروني مستخدم"], 403);
+        }
+        User::where('id', Auth::id())->update(['name' => $newName, 'email' => $email]);
 
         $successMessage = 'تم التحديث بنجاح';
         return response()->json(['success' => $successMessage]);

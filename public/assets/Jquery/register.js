@@ -20,7 +20,7 @@ $(function(){
         })
         .always(function(){
             $this.find('button[type="submit"]').attr('disabled',false)
-            $this.find('button[type="submit"]').text("تسجيل الدخول")
+            $this.find('button[type="submit"]').text("تسجيل")
         })
     })
 

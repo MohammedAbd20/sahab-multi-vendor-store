@@ -10,10 +10,20 @@ A full-stack multi-vendor store platform built with **Laravel 10**, with a stati
 >
 > **حالة المشروع: متوقف مؤقتًا** بسبب الحرب على غزة، وأنوي استكماله عندما تسمح الظروف.
 
+## Screenshots
+
+Captured from the running application. Product images load from an external site, so they are shown as grey placeholders here.
+
+![Home](screenshots/home.png)
+
+| Search and categories | All categories |
+|---|---|
+| ![Search](screenshots/search.png) | ![Categories](screenshots/categories.png) |
+
 ## What exists today
 
-- User registration, login and logout
-- Profile page and change-password flow
+- User registration, login and logout (the profile and change-password pages require a signed-in user)
+- Profile update with validation
 - Products and categories (models, migrations, product quantity)
 - Home, product detail, categories, search and supplier pages
 - Cart, wishlist and recycle-bin pages
@@ -53,6 +63,10 @@ php artisan key:generate
 php artisan migrate
 php artisan serve
 ```
+
+## Credits
+
+The front-end design, Arabic content and visual assets are based on the **accord.ps** website and belong to its owners. This repository builds a Laravel back end around that layout and is not affiliated with Accord.
 
 ## Author
 

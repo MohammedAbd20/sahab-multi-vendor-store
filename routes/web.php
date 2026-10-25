@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', "App\Http\Controllers\indexController@indexPage")->name("index-page");
 
 
-Route::get('/login', "App\Http\Controllers\LoginController@loginPage");
+Route::get('/login', "App\Http\Controllers\LoginController@loginPage")->name('login');
 Route::post('/login', "App\Http\Controllers\LoginController@storeLogin")->name("store-login");
 Route::post('/logout', "App\Http\Controllers\LoginController@logout");
 
@@ -26,8 +26,8 @@ Route::get('/register', "App\Http\Controllers\RegisterController@registerPage");
 Route::post('/register', "App\Http\Controllers\RegisterController@newRegister");
 
 
-Route::get('/profile', "App\Http\Controllers\profileController@profilePage");
-Route::post('/profile', 'App\Http\Controllers\profileController@updateProfile');
+Route::get('/profile', "App\Http\Controllers\profileController@profilePage")->middleware('auth');
+Route::post('/profile', 'App\Http\Controllers\profileController@updateProfile')->middleware('auth');
 
 Route::get('/product/{id}', "App\Http\Controllers\indexController@productPage");
 Route::get('/cart', "App\Http\Controllers\indexController@cartPage");
@@ -39,8 +39,8 @@ Route::get('/recycle-bin', "App\Http\Controllers\indexController@recycleBinPage"
 Route::get('/forget-password', "App\Http\Controllers\indexController@forgetPassPage");
 
 
-Route::get('/change-password', "App\Http\Controllers\changePasswordController@changePassword");
-Route::post('/change-password', "App\Http\Controllers\changePasswordController@updatePassword");
+Route::get('/change-password', "App\Http\Controllers\changePasswordController@changePassword")->middleware('auth');
+Route::post('/change-password', "App\Http\Controllers\changePasswordController@updatePassword")->middleware('auth');
 
 
 

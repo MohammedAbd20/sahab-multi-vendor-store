@@ -16,8 +16,10 @@ class CardController extends Controller
     public function checkValidCards()
     {
         // قراءة البيانات من ملف JSON
-        $jsonFile = Storage::get('cards.json');  // تأكد من المسار الصحيح للملف
-        $cards = json_decode($jsonFile, true);  // تحويل البيانات إلى مصفوفة
+        if (!Storage::exists('cards.json')) {
+            return response()->json([]);
+        }
+        $cards = json_decode(Storage::get('cards.json'), true) ?? [];
 
         // الحصول على التاريخ الحالي
         $currentDate = Carbon::now();
