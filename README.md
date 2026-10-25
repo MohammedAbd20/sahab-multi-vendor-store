@@ -1,61 +1,59 @@
-# 🛒 Multi-Vendor Store Platform (Laravel Full-Stack)
+# Sahab: Multi-Vendor Store (Laravel)
 
-## 🛑 حالة المشروع: متوقف بسبب الحرب على غزة
+![Status](https://img.shields.io/badge/Status-On_hold-orange)
+![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20?logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php&logoColor=white)
 
-هذا المشروع هو **متجر متعدد البائعين (Multi-Vendor Store)** مبني باستخدام **Laravel** كحل متكامل (Full-Stack).  
-كنت متحمسًا جدًا لتطويره بشكل أكبر من حيث الوظائف والتصميم، ولكن للأسف، بسبب **الحرب المستمرة على غزة**، اضطررت لإيقاف العمل عليه مؤقتًا.
+A multi-vendor store platform built with **Laravel 10** as a full-stack application, with a static HTML/CSS/JS front end under `Tasks/`.
 
-رغم التوقف، لا يزال هذا المشروع من المشاريع القريبة إلى قلبي، وأتطلع لاستكماله في المستقبل عندما تسمح الظروف بذلك.
+> **Project status: on hold.** Development was paused because of the ongoing war on Gaza. I plan to resume it when conditions allow.
+>
+> **حالة المشروع: متوقف مؤقتًا** بسبب الحرب على غزة، وأنوي استكماله عندما تسمح الظروف.
 
----
+## What exists today
 
-## ⚙️ المتطلبات التقنية
+- User registration, login and logout
+- Profile page and change-password flow
+- Products and categories (models, migrations, product quantity)
+- Home, product detail, categories, search and supplier pages
+- Cart, wishlist and recycle-bin pages
+- Laravel Sanctum installed for token auth
 
-- PHP >= 8.2  
-- Laravel 11  
-- MySQL أو MariaDB  
-- Composer  
+## Planned
 
----
+- Admin and vendor dashboards
+- Vendor and product management
+- Reviews and comments
+- Responsive, multi-language UI
+- Multiple payment gateways (PayPal, Stripe)
+- Shipping and order tracking
+- Offers and discounts
+- Mobile app connected to the platform
 
-## 🧱 مكونات المشروع
+## Getting started
 
-- (مخطط له) لوحة تحكم للإدارة والبائعين  
-- (مخطط له) نظام إدارة المنتجات والبائعين  
-- سلة مشتريات وعمليات دفع  
-- واجهات حديثة  
-- نظام تصنيفات وفلاتر للمنتجات  
-- نظام تقييمات وتعليقات (مخطط له)  
-- تصميم متجاوب ومتعدد اللغات (مخطط له)
+### Requirements
 
----
+- PHP 8.1 or higher
+- Composer
+- Node.js and npm
+- MySQL or MariaDB
 
-## 🚀 خطوات التشغيل (محليًا)
+### Installation
 
-1. **استنساخ المشروع**:
-    ```bash
-    git clone <رابط المشروع>
-    cd اسم_المجلد
-    composer install
-    npm install
-    cp .env.example .env
-    php artisan key:generate
-    php artisan migrate
-    php artisan serve
-    ```
+```bash
+git clone https://github.com/MohammedAbd20/sahab-multi-vendor-store.git
+cd sahab-multi-vendor-store
 
----
+composer install
+npm install
 
-## 🔭 خطط مستقبلية (عند استئناف التطوير)
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
 
-- دمج بوابات دفع متعددة (PayPal، Stripe...)
-- دعم كامل للغات متعددة (عربي / إنجليزي)
-- نظام شحن وتتبع الطلبات
-- إدارة العروض والخصومات
-- تطبيق موبايل مرتبط بالمنصة
+## Author
 
----
-
-## 🙏 شكرًا لاهتمامك
-
-في حال رغبتك بالمساهمة لاحقًا أو التواصل، يمكن مراسلتي عند استئناف العمل إن شاء الله.
+**Mohammed Abd Elrahman**: [GitHub](https://github.com/MohammedAbd20) · [LinkedIn](https://www.linkedin.com/in/mohammed-abd-elrahman-9618a732b/)
