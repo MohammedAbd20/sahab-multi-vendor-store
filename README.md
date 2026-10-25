@@ -4,7 +4,7 @@
 ![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20?logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?logo=php&logoColor=white)
 
-A multi-vendor store platform built with **Laravel 10** as a full-stack application, with a static HTML/CSS/JS front end under `Tasks/`.
+A full-stack multi-vendor store platform built with **Laravel 10**, with a static HTML/CSS/JS front end under `Tasks/`.
 
 > **Project status: on hold.** Development was paused because of the ongoing war on Gaza. I plan to resume it when conditions allow.
 >
